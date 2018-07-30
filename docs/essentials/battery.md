@@ -24,7 +24,7 @@ The `Battery` permission is required and must be configured in the Android proje
 Open the **AssemblyInfo.cs** file under the **Properties** folder and add:
 
 ```csharp
-[assembly: UsesPermission(Android.Manifest.Permission.Battery)]
+[assembly: UsesPermission(Android.Manifest.Permission.BatteryStats)]
 ```
 
 OR Update Android Manifest:
@@ -32,10 +32,10 @@ OR Update Android Manifest:
 Open the **AndroidManifest.xml** file under the **Properties** folder and add the following inside of the **manifest** node.
 
 ```xml
-<uses-permission android:name="android.permission.BATTERY" />
+<uses-permission android:name="android.permission.BATTERY_STATS" />
 ```
 
-Or right click on the Anroid project and open the project's properties. Under **Android Manifest** find the **Required permissions:** area and check the **Battery** permission. This will automatically update the **AndroidManifest.xml** file.
+Or right click on the Anroid project and open the project's properties. Under **Android Manifest** find the **Required permissions:** area and check the **BatteryStats** permission. This will automatically update the **AndroidManifest.xml** file.
 
 # [iOS](#tab/ios)
 
